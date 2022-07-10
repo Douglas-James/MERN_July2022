@@ -5,4 +5,5 @@
 npm cache clean --force.\
 npm rebuild.\
 npm install.\
-npm start
+npm start./
+updated
