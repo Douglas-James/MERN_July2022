@@ -1,0 +1,6 @@
+// if you find your self with npm bugs
+npm cache clean --force
+npm rebuild
+npm install
+
+// change
