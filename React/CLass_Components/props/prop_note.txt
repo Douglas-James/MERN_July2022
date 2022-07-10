@@ -1,0 +1,2 @@
+// JUSst notes
+props, short for properties
