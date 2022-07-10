@@ -2,6 +2,7 @@
 npm cache clean --force
 npm rebuild
 npm install
+npm start
 
 // change
 
