@@ -1,0 +1,4 @@
+// class components
+components are like javascript functions. the accept input(called'props') and return React elements
+
+
