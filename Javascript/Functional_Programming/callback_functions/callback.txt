@@ -1,0 +1,38 @@
+callback functions
+
+setTimeout() allows us to define a delay in our code.
+
+with two paramenters that it expects:
+1. arrow functions or functions
+2. a number / 2000 millisecond 2second
+
+> typeoff('Hello');
+// output
+'string'
+> typeoff(()=> {});
+// output
+'function'
+
+// callback functions setTimeout()
+setTimeout(()=>{
+  console.log("start")
+}, 2000)
+console.log('end');
+
+console.log(typeof('Hello'))
+console.log(typeof(()=>{}))
+
+var exampleFunction = message => {
+  console.log(message)
+}
+exampleFunction("Hello from exampleFunction");
+
+const parentFunction = (callback) => {
+  callback("information from the parent function");
+}
+parentFunction(exampleFunction);
+
+
+parentFunction((message)=>{
+  console.log(message);
+});

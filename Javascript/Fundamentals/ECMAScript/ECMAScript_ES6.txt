@@ -1,0 +1,21 @@
+What's in a name?
+when it was on beta face it was called Mocha, moved in to LiveScript.
+After period of time Netscape change the language to Javascript, give popular 
+language like Java.
+
+
+
+Enter ECMAScript
+Europeain Computer Manufacturer's Association current up-to-data 
+for standardization of Javascript.
+Just call it know 'Es'.
+
+
+
+ES6 and Beyond
+ES6 was released on 2015 with new features, also with standard.
+
+
+
+Takeaways
+we are going to learn new ES6 and also ES5.

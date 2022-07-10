@@ -1,0 +1,27 @@
+Introduction
+We have Syntax Errors and runtime error
+
+
+
+Syntax Errors
+let x = 1;
+let y = 2;
+let z == 3; Error unexpected token '=='
+
+
+
+
+
+
+Runtime_Errors
+A runtime is what happens if your code successfully parses and is these a bugs
+this happens when you doesn't behave in the way you expected.
+
+
+
+
+
+Recap
+
+
+

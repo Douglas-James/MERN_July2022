@@ -1,0 +1,55 @@
+What is Scope?
+Has type of scope: Global and Local. New scope are created by
+definining functions.
+
+
+Global Scope
+onminpresent, which means that any variables or functions defined
+are aviable to every aspect of your applications
+
+
+
+
+
+Local Scope
+Has a narrower program visibility, it has a particular function in which that information
+is defined is only access inside that function
+
+
+Identifying Scope
+var beatles = ['Paul', 'George', 'John', 'Ringo']; Global variables
+
+
+function printNames(names) 
+{
+  function actuallyPrintingNames() 
+  {
+    for (var index = 0; index < names.length; index++) 
+    {
+      var name = names[index];
+  
+      console.log(name + ' was found at index ' + index);
+    }
+    console.log('name and index after loop is ' + name + ':' + index);
+  }
+  actuallyPrintingNames(); // new function that can be called here in this
+  function
+}
+printNames(beatles);
+
+every thing has access to that array
+                     
+
+
+
+
+Const and Let
+ES6 we got two new ways of declare variables.
+It is used scope information more precisely to individual, is know as 
+block scoping. A code block is called like this {}.
+
+Const: Need a value at creation and value can't be change for the 
+life of that variable.It is immutable
+
+Let: Allows for reassignment of our declaration, doesn't 
+require a value upon declaration.

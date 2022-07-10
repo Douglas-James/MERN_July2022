@@ -1,0 +1,13 @@
+// using React
+it allows Javascript to dynamically change html and css without refresh and request a new page
+
+// React
+html -->
+<div id='root'></div>
+then cdn here
+script src=development.js
+script src=development.js
+<script>
+you read to right you own React
+</script>
+<-- html

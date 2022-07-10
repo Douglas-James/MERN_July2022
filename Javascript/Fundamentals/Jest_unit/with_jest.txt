@@ -1,0 +1,12 @@
+with_jest
+1. write failing tests for the relevant functionality.
+2. Build out a working implementation of the needed functionality.
+3. Refactor your code as needed to ensure your tests pass.
+
+
+when would need to use terminal
+ npm init -y
+ npm i --save-dev jest
+
+to run the tests
+npm run test

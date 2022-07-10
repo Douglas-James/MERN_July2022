@@ -1,0 +1,5 @@
+map and filter 
+
+.map() will copy of an array and apply our own twist by using callback function
+
+.filter() with only the values similar and provide a callback function this time if would return false or true

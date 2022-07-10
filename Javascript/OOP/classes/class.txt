@@ -1,0 +1,24 @@
+Introduction 
+with the Introduction ES6, JavaScript developers now have access to
+the class keyword.
+
+
+Class and Constructor
+       name
+Class Vehicle {
+               <-arguments or attribute->
+  Constructor(manufacturer, model, color){
+    this.miles = 0; default value
+    this.manufacturer = manufacturer;
+    this.model = model;
+    this.color = color;
+  }
+  <-method->
+  drive(){
+    this.miles += 10;
+  }
+}
+
+const car = new Vehicle("BWM", "M5", 'blue');
+car.drive(); calling the method drive()
+console.log(car.miles);

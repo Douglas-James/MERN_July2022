@@ -1,0 +1,28 @@
+why js?
+Javascript is the magic that brings the internet to life. 
+Google auto-complete, animations, dynamic transitions, single-page 
+web applications like chat apps, loading screens, drop menus.
+
+The Big Three!
+
+1.
+HTML: represents the content and the structure.
+Elements are first placed into the docoument objects models, or DOM,
+data can be represented on the browser
+
+2. 
+CSS: represented as style and positioning of the our HTML Elements.
+
+3. 
+Javascript:Is the action is the behavior of our website.Js allows 
+us to interact with our HTML & CSS by dynamically manipulating the DOM.
+
+Features
+Javascript is an interpreted language:
+
+Javascript is an event-driven programming language:
+
+Javascript is run on a single thread:
+
+
+

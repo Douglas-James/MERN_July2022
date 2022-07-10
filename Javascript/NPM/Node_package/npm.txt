@@ -1,0 +1,8 @@
+// what is npm 
+npm is a packamge manager.
+
+// installing packages
+npm install -g nodemon
+
+mac 
+sudo npm install -g nodemon

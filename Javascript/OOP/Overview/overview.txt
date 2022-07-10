@@ -1,0 +1,20 @@
+Overview of OOP
+Is know as objects oriented programming. 
+We need to represent what we have in the real world, example 
+let say that we have user we would need to create that in OOP.
+
+this not finished 
+const user1 = {
+  name: 'Kermit',
+  email: 'kermit@sesame.org'
+}
+
+Nesting objects
+const user1 = {
+  name: 'Kermit',
+  email: 'kermit@sesame.org',
+  friend: {
+    name: 'Miss Piggy',
+    email: 'piggy@sesame.org'
+  }
+}

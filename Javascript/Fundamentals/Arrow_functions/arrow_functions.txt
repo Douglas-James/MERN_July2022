@@ -1,0 +1,11 @@
+Arrow functions 
+An anonymous functions is simply functions without a name
+
+Normal way
+var sayHello = function(name){
+   console.log('Hello' + name);
+ };
+
+arrow functions
+const sayHello = (name) => {console.log(`Hello ${name}`)};
+sayHello('James');

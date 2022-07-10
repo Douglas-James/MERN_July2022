@@ -1,0 +1,37 @@
+Rest/spread 
+new operator, ...., it was design to capture 
+the rest of a data, or to spread content of an existing structure
+
+
+Destructuring
+const animals = ['horse', 'dog', 'fish', 'cat', 'bird'];
+const [firstAnimal, secondAnimal] = animals;
+
+
+Rest pattern 
+const [firstAnimal, secondAnimal, ....otherAnimals] = animals;
+otherAnimals
+// => ['fish', 'cat', 'bird']
+
+
+Object 
+const person = {
+  firstName: 'Bob', 
+  lastName: 'Marley',
+  email: 'bob@marley.com',
+  password: 'sekureP@assw0rd9',
+  username: 'barley',
+  addresses: [
+    {
+      address: '1600 Pennsylvania Avenue',
+      city: 'Washington, D.C.',
+      zipcode: '20500',
+    },
+    {
+      address: '221B  Baker St.',
+      city: 'London',
+      zipcode: 'WC2N 5DU',
+    }
+  ],
+  createdAt: 1543945177623
+}

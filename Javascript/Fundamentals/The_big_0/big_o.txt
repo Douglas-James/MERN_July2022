@@ -1,0 +1,32 @@
+Big O Notation:
+is a plot now how long a algorithms should take to run.
+
+
+|__________________________________|
+| BIG O| Description    | Example  |
+|______|________________|__________|
+| O(1) |
+|______|________________|__________|
+| O(N) |
+|______|________________|__________|
+|O(N^2)|
+|______|
+|O(log |
+|(N) ) |
+|______|
+
+
+
+Big O
+Description
+Example
+O( 1 )
+Algorithms that can be completed in a constant number of operations.	Find the smallest value in a sorted array
+O( N )
+Algorithms that may have to run "N" number of times	Find the smallest value in an unsorted array
+O( N^2 )
+Algorithms that may have to go through "N" things "N" times	Bubble Sort
+O( log(N) )
+Algorithms that can reduce the remaining pool of values by half or more for each value read through	Binary Search
+O( N*log(N) )
+Algorithms that can employ a divide and conquer approach 	Quick Sort
