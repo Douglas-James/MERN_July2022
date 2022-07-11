@@ -1,8 +1,18 @@
 # Class_components quick note
 class compentsare like javascript./ accept arbitrary is(called'props') and return React elelemts
 
-
-
+folder Component
+file SomeClassComponent.jsx
+import React, { Component } from 'react';
+    
+    
+class SomeClassComponent extends Component {
+    render() {
+        return <div>This is our first class component.</div>;
+    }
+}
+    
+export default SomeClassComponent;
 
 
 
@@ -18,6 +28,8 @@ class compentsare like javascript./ accept arbitrary is(called'props') and retur
 
 
 # Props
+genral work in src 
+folder.\
 
 
 
