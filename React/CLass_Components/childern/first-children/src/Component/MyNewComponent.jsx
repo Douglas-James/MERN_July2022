@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class MyNewComponent extends Component {
   render() {
     return (
-      <div>
+      <div className="item">
         <h1>{this.props.header}</h1>
         {this.props.children}
       </div>
