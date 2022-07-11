@@ -10,8 +10,8 @@ class Menuitem extends Component {
     this.state = {
       message: "Welcome to state!",
     };
-    // write function here
   }
+ // write function here
   newmessage = (e) => {
     this.setState({ message: "New state!" });
   };
