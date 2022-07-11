@@ -51,7 +51,7 @@ export default Menuitem;
 
 
 .\
-App.js
+<!-- App.js
 import logo from './logo.svg';
 import './App.css';
 import Menuitem from './Components/MenuItem';
@@ -76,7 +76,7 @@ function App() {
       ></Menuitem>
     </div>
   );
-}
+} -->
 
 export default App;
 
