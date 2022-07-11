@@ -5,8 +5,7 @@ import MyNewComponent from './MyNewComponent';
 function App() {
   return (
     <div className="App">
-        <MyNewComponent />
-        <MyNewComponent />
+        <MyNewComponent></MyNewComponent>
     </div>
   );
 }
