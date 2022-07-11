@@ -19,7 +19,6 @@ class Birthday extends Component {
   render() {
     return (
       <div className="item">
-        console.log(Age);
         <h1>{this.props.Name}</h1>
         <p>Age: {this.state.age}</p>
         <p>Hair color:{this.props.description}</p>
