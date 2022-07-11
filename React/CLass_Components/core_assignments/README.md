@@ -4,3 +4,10 @@
 
 
 # More core Down here
+
+
+
+
+# props 
+Just a write something without repeating your self 
+in jija style.

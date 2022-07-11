@@ -1,11 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import Menuitem from './Component/Menuitem';
-
 function App() {
   return (
     <div className="App">
-      <h1>Dojo Diner Menu</h1>
       <Menuitem
         dishName={"Basile Calamari-Thai"}
         price={12.0}
@@ -19,7 +17,7 @@ function App() {
       <Menuitem
         dishName={"Buffalo Wings"}
         price={8.0}
-        description={"Its fried sequid with basil and Thai spices"}
+        description={'Its fried sequid with basil and Thai spices'}
       ></Menuitem>
     </div>
   );
