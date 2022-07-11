@@ -67,7 +67,10 @@ nameofmethod(e)=>{
 
 
 # Style
-
+just look inside the childern folder should tell how work 
+with style with import your own also using cdn. 
+work inside public for cdn only
+or javascript don't add any html or css
 
 
 # Css in Jas
