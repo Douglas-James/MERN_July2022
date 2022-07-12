@@ -13,9 +13,9 @@ const PersonCard = (props) =>
   };
   return (
     <div>
-      <h1>{props.Name}</h1>
+      <h1>{props.lastName},{props.firstName}</h1>
       {stateAge}
-      <p>Hair color:{props.description}</p>
+      <p>Hair color:{props.hairColor}</p>
       <button onClick={agecrement}>Clik to incress Age</button>
     </div>
   );
