@@ -4,8 +4,11 @@
 
 
 # User state
-
-
+--import React, {usesState} from 'react';
+This import hooks, useState will import from react. need 
+to convert this class component to a function components
+let [state, setState] = useState(prop.name)
+look inside the  pre_assignment for the file big-inversion
 
 
 
