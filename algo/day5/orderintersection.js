@@ -44,7 +44,11 @@ function orderedIntersection(sortedA, sortedB) {
     //compare elements at index i with j, to see if they are equal
     if (sortedA[i] == sortedB[j]) {
       // if they are equal check if the output already has that element, if doesn't then is okay to move to output
-      if (!newArr.includes(sortedA[i])) {
+      // if (!newArr.includes(sortedA[i])) {
+      //   newArr.push(sortedA[i]);
+      // }
+      if(newArr[newArr.length - 1] != sortedA[i])
+      {
         newArr.push(sortedA[i]);
       }
       //if there is no smaller element, increment both indexes
@@ -68,6 +72,6 @@ function orderedIntersection(sortedA, sortedB) {
 // //[2]
 
 // const expected1 = [2, 7];
-console.log(orderedIntersection(numsA1, numsB1));
+console.log(orderedIntersection(numsA2, numsB2));
 
 /*****************************************************************************/
