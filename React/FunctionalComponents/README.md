@@ -1,6 +1,5 @@
 # Functional Components
-
-
+--Functional Components we be using an arrow function
 
 
 
