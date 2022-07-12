@@ -1,7 +1,7 @@
 // import useState
 import React, {useState} from "react";
 
-const From = () =>
+const From = (props) =>
 {
   // Create state variable to keep track of form info
   let [firstName, setFirst] = useState('');
