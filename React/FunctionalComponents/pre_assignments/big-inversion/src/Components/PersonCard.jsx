@@ -10,6 +10,7 @@ const PersonCard = props =>
   const agecrement = () => 
   {
       // let state =  setState({ age: props.state.age + 1 });
+    console.log(state)
     setState(state+1)
   };
   return (
