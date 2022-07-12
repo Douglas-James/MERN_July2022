@@ -14,10 +14,13 @@ const From = (props) =>
   // write functional
   // don't forget to console log it
  
-
-
+  
+  
   // return with html
   return (
+      // {
+      //   firstName.length<3 && firstName.length>0? <p>first Name need to 3</p> : null
+      // }
     <div className="container">
       <form>
         <label htmlFor="firstname">FirstName</label>
