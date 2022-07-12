@@ -46,13 +46,6 @@ const From = (props) =>
         )}
       </form>
       <hr />
-      <div className="container">
-        <h3>First Name: {firstName}</h3>
-        <h3>Last Name: {lastName}</h3>
-        <p>Email: {email}</p>
-        <p>Password:{password} </p>
-        <p>Confirmed: {confirmPassword}</p>
-      </div>
     </div>
   );
 
