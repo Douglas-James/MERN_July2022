@@ -3,7 +3,7 @@
 //   this.setState({ age: this.state.age + 1 });
 // };
 import React, {useState} from 'react';
-const PersonCard = (props) => 
+const PersonCard = props => 
 {
   let [stateAge, stateage] = useState(props.age)
   const agecrement = () => 
