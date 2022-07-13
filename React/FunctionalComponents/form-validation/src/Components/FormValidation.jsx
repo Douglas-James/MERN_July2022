@@ -29,6 +29,26 @@ export default () => {
   // const isValidEmail = (email) => {
   //   return //s+@\s+\.\s+.test(email);
   // }
+  let [hasBeenSubmitted, setHasbeenSubmitted] = useState(false)
+  // console.log(firstName)
+  // console.log(lastName)
+  // console.log(email)
+
+  const createUser = (e) => {
+      e.preventDefault();
+      const newUser = 'test'
+      console.log("Welcome", newUser);
+      setHasbeenSubmitted(true);
+    };
+
+    const formMessage = () =>{
+      if(hasBeenSubmitted){
+        return 'Thank You for the sub!'
+      }
+      else{
+        return 'Welcome, please submit the form';
+      }
+    }
 
   const handleChange = (e) => {
     // if(!isValidEmail(e.target.value)){
@@ -43,7 +63,8 @@ export default () => {
     });
   }
   return (
-    <div>
+    <form onSubmit={createUser}>
+      <h3>{formMessage()}</h3>
       <h1>{JSON.stringify(state)}</h1>
       <div>
         <label>
@@ -67,8 +88,9 @@ export default () => {
         <label>
           <span>Email:</span>{" "}
           <input name="email" value={state.value} onChange={handleChange} />
+          <button>Subumited</button>
         </label>
       </div>
-    </div>
+    </form>
   );
 };
