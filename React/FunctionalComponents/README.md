@@ -15,10 +15,13 @@ look inside the  pre_assignment for the file big-inversion
 
 
 # Forms
+--state: track input values of your state. are called controlled components.\
+--refs: attach a oointer to dom nodes. are called unctrolled components
+just use the state.\
 
-
-
-
+1. onChange
+2.  onSubmit
+3.  createUser
 
 
 
