@@ -25,6 +25,7 @@ export default () => {
     return (
         <div>
             {JSON.stringify(state)}
+            <h1>{JSON.stringify(state)}</h1>
             <div>
                 <label>
                     <span>Name:</span>{' '}
