@@ -1,33 +1,40 @@
-import React, { useReducer, useState } from "react";
-import validator from 'validator'
-// // creat variable object or anythings up here
-//  const initialState = {
-//        firstName: {
-//        value: '',
-//        error: null
-//      },
-//      lastName: {
-//        value: '',
-//        error: null
-//      },
-//      email: {
-//          value: '',
-//          error: null
-//      }
-//   };
-//   // function here
-//   const reducer = (state, action) => 
-//   {
-//    return{
-//      ...state,
-//      [action.type]: action.playload
-//    };
-//   }
+// import useState
+import React, {useState} from "react";
+import validator from "validator";
+
+const From = (props) =>
+{
+  // Create state variable to keep track of form info
+  let [firstName, setFirst] = useState('');
+  let [lastName, setLast] = useState('');
+  let [email, setEmail] = useState('');
+  let [password, setPassword] = useState('');
+  let [confirmPassword, setConfirm] = useState('');
+  let [hasBeenSubmitted, setHasbeenSubmitted] = useState(false)
+  console.log(firstName)
+  console.log(lastName)
   
-  export default () => {
+  // write functional
+  // don't forget to console log it
+  const createUser = (e) => {
+    e.preventDefault();
+    const newUser = {firstName, lastName, email, confirmPassword};
+    console.log('Welcome', newUser);
+    setHasbeenSubmitted(true);
+  }
+  // this conditional rendering 
+  const formMessage = () => {
+    if(hasBeenSubmitted){
+      return 'Thank you for sub the form!'
+    }
+    else{
+      return 'Welcome, please submit the form';
+    }
+  }
   // validation email
   const [emailError, setEmailError] = useState('')
   // function for validation
+  // email validation
   const validateEmail = (e) => {
     var email = e.target.value
   
@@ -37,32 +44,86 @@ import validator from 'validator'
       setEmailError('Email is invalid!')
     }
   }
-
-  // // funcgtion for reducer and initial state
-  // const [state, dispatch] = useReducer(reducer, initialState);
-  // const handleChange = (e) => {
-  //   const {name, value} = e.target;
-  //   dispatch({
-  //     type: name,
-  //     playload: value
-  //   })
-  // }
-
   
-  
+  // return with html
   return (
-    <div style={{
-      margin: 'auto',
-      marginLeft: '300px',
-    }}>
-      <form>
-         <span>Enter Email: </span><input type="email" id="userEmail" name="email" onChange={(e) => validateEmail(e)} ></input> <br />
-        <span style={{
-          fontWeight: 'bold',
-          color: 'red',
-        }}>{emailError}</span>
+    // {
+    //   firstName.length<3 && firstName.length>0? <p>first Name need to 3</p> : null
+    // }
+    <div className="container">
+      <form onSubmit={createUser}>
+        {/* Ternary operators */}
+        {
+          hasBeenSubmitted?
+          <h3>Thank you for Submit the form!</h3>:
+          <h3>Welcome, please submit the form.</h3>
+        }
+        {/* Condition Rendering */}
+        {/* <h3>{formMessage()}</h3> */}
+        <label htmlFor="firstname">FirstName</label>
+        <input
+          type="text"
+          className="form-control"
+          onChange={(e) => setFirst(e.target.value)}
+        />
+        {/* Validation first name */}
+        {firstName.length < 2 && firstName.length > 0 ? (
+          <p className="text-danger">
+            First Name must be at least 2 characters
+          </p>
+        ) : null}
+        <label htmlFor="lastname">Last Name</label>
+        <input
+          type="text"
+          className="form-control"
+          onChange={(e) => setLast(e.target.value)}
+        />
+        {/* validation last name */}
+        {lastName.length < 2 && lastName.length > 0 ? (
+          <p className="text-danger">
+            Last Name must be at least 2 characters
+          </p>
+        ) : null}
+        <label htmlFor="email">Email</label>
+        <input
+          type="email"
+          className="form-control"
+          onChange={(e) => setEmail(e.target.value) } 
+        />
+        {/* Email validation character */}
+        {email.length < 2 && email.length > 0 ? (
+          <p className="text-danger">Email must be at least 2 characters</p>
+        ) : null}
+        {
+          validator.isEmail(email)?<p className="text-success">{setEmailError} Valid Email :)</p>: <p className="text-danger">{setEmailError} Email not found : (</p>
+          
+        }
+        <label htmlFor="passowrd">Password</label>
+        <input
+          type="password"
+          onChange={(e) => setPassword(e.target.value)}
+          className="form-control"
+        />
+        {/* Main password character check */}
+        {password.length < 8 && password.length > 0 ? (
+          <p className="text-danger">Password must be at least 8 characters</p>
+        ) : null}
+        <label htmlFor="confirm">Confirm</label>
+        <input
+          type="password"
+          onChange={(e) => setConfirm(e.target.value)}
+          className="form-control"
+        />
+        {/* Match validation for password with confirm */}
+        {confirmPassword === password ? null : (
+          <p className="text-danger">Password must match</p>
+        )}
+        <button>Create Users</button>
       </form>
+      <hr />
     </div>
   );
-}
-  
+
+}; 
+
+export default From;
