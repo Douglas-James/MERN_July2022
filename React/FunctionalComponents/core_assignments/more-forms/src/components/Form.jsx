@@ -41,25 +41,58 @@ const From = (props) =>
       <form onSubmit={createUser}>
         <h3>{formMessage()}</h3>
         <label htmlFor="firstname">FirstName</label>
-        <input type="text" className="form-control" onChange={(e) => setFirst(e.target.value)}/>
+        <input
+          type="text"
+          className="form-control"
+          onChange={(e) => setFirst(e.target.value)}
+        />
         {/* Validation first name */}
-        {firstName.length < 2 && firstName.length > 0 ? (<p>First Name must be at least 2 characters</p>) : null}
+        {firstName.length < 2 && firstName.length > 0 ? (
+          <p className="text-danger">
+            First Name must be at least 2 characters
+          </p>
+        ) : null}
         <label htmlFor="lastname">Last Name</label>
-        <input type="text" className="form-control" onChange={(e) => setLast(e.target.value)}/>
+        <input
+          type="text"
+          className="form-control"
+          onChange={(e) => setLast(e.target.value)}
+        />
         {/* validation last name */}
-        {lastName.length < 2 && lastName.length > 0 ? (<p>Lirst Name must be at least 2 characters</p>) : null}
+        {lastName.length < 2 && lastName.length > 0 ? (
+          <p className="text-danger">
+            Last Name must be at least 2 characters
+          </p>
+        ) : null}
         <label htmlFor="email">Email</label>
-        <input type="email" className="form-control" onChange={(e) => setEmail(e.target.value)}/>
+        <input
+          type="email"
+          className="form-control"
+          onChange={(e) => setEmail(e.target.value)}
+        />
         {/* Email validation character */}
-        {email.length < 2 && email.length>0?(<p>Email must be at least 2 characters</p>) : null}
+        {email.length < 2 && email.length > 0 ? (
+          <p className="text-danger">Email must be at least 2 characters</p>
+        ) : null}
         <label htmlFor="passowrd">Password</label>
-        <input type="password" onChange={(e) => setPassword(e.target.value)} className="form-control"/>
+        <input
+          type="password"
+          onChange={(e) => setPassword(e.target.value)}
+          className="form-control"
+        />
         {/* Main password character check */}
-        {password.length < 8 && password.length > 0 ?(<p>Password must be at least 8 characters</p>) : null}
+        {password.length < 8 && password.length > 0 ? (
+          <p className="text-danger">Password must be at least 8 characters</p>
+        ) : null}
         <label htmlFor="confirm">Confirm</label>
-        <input type="password" onChange={(e) => setConfirm(e.target.value)} className="form-control"/>
+        <input
+          type="password"
+          onChange={(e) => setConfirm(e.target.value)}
+          className="form-control"
+        />
         {/* Match validation for password with confirm */}
-        {confirmPassword === password ? null :(<p>Password must match</p>
+        {confirmPassword === password ? null : (
+          <p className="text-danger">Password must match</p>
         )}
         <button>Create Users</button>
       </form>
