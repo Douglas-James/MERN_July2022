@@ -8,12 +8,28 @@ const From = (props) =>
   let [lastName, setLast] = useState('');
   let [email, setEmail] = useState('');
   let [password, setPassword] = useState('');
-  let [confirmPassword, setConfirm] = useState('')
+  let [confirmPassword, setConfirm] = useState('');
+  let [hasBeenSubmitted, setHasbeenSubmitted] = useState(false)
   console.log(firstName)
   console.log(lastName)
+  
   // write functional
   // don't forget to console log it
- 
+  const createUser = (e) => {
+    e.preventDefault();
+    const newUser = {firstName, lastName, email, confirmPassword};
+    console.log('Welcome', newUser);
+    setHasbeenSubmitted(true);
+  }
+
+  const formMessage = () => {
+    if(hasBeenSubmitted){
+      return 'Thank you for submitted the form!'
+    }
+    else{
+      return 'Welcome, please submit the form';
+    }
+  }
   
   
   // return with html
@@ -22,7 +38,8 @@ const From = (props) =>
     //   firstName.length<3 && firstName.length>0? <p>first Name need to 3</p> : null
     // }
     <div className="container">
-      <form>
+      <form onSubmit={createUser}>
+        <h3>{formMessage()}</h3>
         <label htmlFor="firstname">FirstName</label>
         <input type="text" className="form-control" onChange={(e) => setFirst(e.target.value)}/>
         {/* Validation first name */}
@@ -44,6 +61,7 @@ const From = (props) =>
         {/* Match validation for password with confirm */}
         {confirmPassword === password ? null :(<p>Password must match</p>
         )}
+        <button>Create Users</button>
       </form>
       <hr />
     </div>
