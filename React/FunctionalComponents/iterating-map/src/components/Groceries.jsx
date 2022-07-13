@@ -7,8 +7,8 @@ const Groceries = (props) => {
   console.log(groceryList)
   return (
     <ol>
-      {groceryList.map((item, i) => 
-      <li key={ i}>{item}</li>)}
+      {groceryList.map((item, index) => 
+      <li key={index}>{item} key {index}</li>)}
     </ol>
   );
 };
