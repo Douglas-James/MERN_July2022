@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import React, { useState } from "react";
 import './App.css';
-import BoxGenerator from './Components/BoxGenerator';
+import Box from "./Components/Box";
+import Form from "./Components/BoxGenerator";
 
 function App() {
-  // need to create color and setColor
-  let [color, setColor] = useState([]);
-  // let [sizBox, setBox] = useState([]);
-  // sizBox={sizBox}
-  // setBox={setBox}
- 
+
+  const [boxes, setBoxes] = useState([]);
+
+  const [boxDetails, setBoxDetails] = useState({
+    color: "",
+    size: "",
+  })
+
   return (
     <div className="App">
-      <BoxGenerator
-      color={color}
-      setColor= {setColor}
+      <Form
+        boxDetails={boxDetails}
+        setBoxDetails={setBoxDetails}
+        boxes = {boxes}
+        setBoxes={setBoxes}
       />
-      {
 
+      {
+        boxes.map(box => <Box color={box.color} size={box.size}/>)
       }
+
     </div>
   );
 }

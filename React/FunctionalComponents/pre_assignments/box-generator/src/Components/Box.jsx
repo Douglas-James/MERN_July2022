@@ -1,16 +1,19 @@
-import React from "react";
 
-const Box = (props) => {
-  const sizBox = 
-  {
-    height: '35px',
-    width: '35px',
+import React from 'react';
+
+const Box = props => {
+
+  const boxStyle = {
+    height: `${props.size}px`,
+    width: `${props.size}px`,
     backgroundColor: props.color,
     display: 'inline-block',
+    margin: '10px'
   }
-  console.log(sizBox)
+
   return (
-    <div style={sizBox}></div>
-  );
+    <div style={boxStyle}></div>
+    );
 }
+
 export default Box;

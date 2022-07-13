@@ -1,29 +1,33 @@
-import React, {useState} from "react";
-import Box from "./Box";
+import React from 'react';
 
+const Form = (props) => {
 
-const BoxGenerator = (props) =>
-{
-  // write let or const
-    let {color, setColor} = props;
-    // let {sizeBox, setBox} = props;
-    console.log(color, setColor);
-    // console.log(sizeBox, setBox);
+  const { boxDetails, setBoxDetails} = props;
+  const { boxes, setBoxes } = props;
 
-    // write functions
-    const createBox = (e) => {
-      e.preventDefault();
-      setColor(color)
-      console.log(setColor)
-    }
-    
+  const onChange = (e) => {
+    setBoxDetails({
+      ...boxDetails,
+      [e.target.name]: e.target.value,
+    })
+  }
 
-    return (
-      <form onSubmit={createBox}>
+  const createBox = (e) => {
+    e.preventDefault();
+    setBoxes(boxes => [...boxes, {"color": boxDetails.color, "size": boxDetails.size}]);
+  }
+
+  return (
+    <form onSubmit={createBox}>
+      <div>
         <label htmlFor="color">Color</label>
-        <input type="text" onChange={(e)=>{setColor(e.target.value);}}/>
-        <input type="submit" value="Add" />
-      </form>
-    );
+        <input onChange={ onChange } type="text" name="color" />
+        <label htmlFor="size">Size</label>
+        <input onChange={ onChange } type="text" name="size" />
+        <button value="color">Add</button>
+      </div>
+    </form>
+  )
 }
-export  default BoxGenerator;
+
+export default Form;
