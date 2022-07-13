@@ -31,6 +31,7 @@ just use the state.\
 1. Conditional Rendering:test .\
 test2.\
 2. Using Ternary Operators:test      .\
+test2.\
 3. Handling Validations: 
 
 
