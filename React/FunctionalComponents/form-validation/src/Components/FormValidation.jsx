@@ -24,11 +24,7 @@ const reducer = (state, action) => {
 
 
 export default () => {
-  // const [error, setEror] = useState(null)
   const [state, dispatch] = useReducer(reducer, initalState);
-  // const isValidEmail = (email) => {
-  //   return //s+@\s+\.\s+.test(email);
-  // }
   let [hasBeenSubmitted, setHasbeenSubmitted] = useState(false)
   // console.log(firstName)
   // console.log(lastName)
@@ -51,11 +47,6 @@ export default () => {
     }
 
   const handleChange = (e) => {
-    // if(!isValidEmail(e.target.value)){
-    //     setEror('Email is invalid');
-    // }else{
-    //   setEror(null);
-    // }
     const { name, value} = e.target;
     dispatch({
       type: name,
@@ -88,7 +79,7 @@ export default () => {
         <label>
           <span>Email:</span>{" "}
           <input name="email" value={state.value} onChange={handleChange} />
-          <button>Subumited</button>
+          <input type="submit" value="Submit" />
         </label>
       </div>
     </form>
