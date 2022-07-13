@@ -1,23 +1,24 @@
 import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
+import BoxGenerator from './Components/BoxGenerator';
 
 function App() {
+  // need to create color and setColor
+  let [color, setColor] = useState([]);
+  // let [sizBox, setBox] = useState([]);
+  // sizBox={sizBox}
+  // setBox={setBox}
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BoxGenerator
+      color={color}
+      setColor= {setColor}
+      />
+      {
+
+      }
     </div>
   );
 }
