@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './box.css'
 const Form = (props) => {
 
   const { boxDetails, setBoxDetails} = props;
@@ -24,7 +24,7 @@ const Form = (props) => {
         <input onChange={ onChange } type="text" name="color" />
         <label htmlFor="size">Size</label>
         <input onChange={ onChange } type="text" name="size" />
-        <button value="color">Add</button>
+        <button value="color" className='btn'>Add</button>
       </div>
     </form>
   )
