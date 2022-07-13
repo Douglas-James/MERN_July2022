@@ -28,11 +28,12 @@ just use the state.\
 
 # Conditional Rendering
 
-1. Conditional Rendering:test .\
-test2.\
+1. Conditional Rendering:This create function and and use the return .\
+and send to and goes back to return for html
+
 2. Using Ternary Operators: Ternery operater offer a better way to conditionally render an element.\
-The biggest advantage in using ternary operator here is that we can replace the formMessage function.\
-3. Handling Validations: We cab use ternaries to diplay potential validation messages
+The biggest advantage in using ternary operator here is that we can replace the formMessage function.
+3. Handling Validations: We can use ternaries to diplay potential validation messages
 
 
 
