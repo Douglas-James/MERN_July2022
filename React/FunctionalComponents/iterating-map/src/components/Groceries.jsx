@@ -1,15 +1,15 @@
 import React from 'react';
-
+import './groceries.css'
 
 const Groceries = (props) => {
   // this could just as easily come from props
-  const groceryList = ['pearl onions', 'banana', 'apple', 'orange']
+  const groceryList = ['pearl ', 'banana', 'apple', 'orange', 'more to do', 'pearl ', 'banana', 'apple', 'orange', 'more to do']
   console.log(groceryList)
   return (
-    <ol>
+    <ul>
       {groceryList.map((item, index) => 
       <li key={index}>{item} key {index}</li>)}
-    </ol>
+    </ul>
   );
 };
 
