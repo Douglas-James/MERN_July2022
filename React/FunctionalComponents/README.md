@@ -28,8 +28,9 @@ just use the state.\
 
 # Conditional Rendering
 
-1. Conditional Rendering:test .\ test2.\
-2. Using Ternary Operators:test      .\test2.\
+1. Conditional Rendering:test .\
+test2.\
+2. Using Ternary Operators:test      .\
 3. Handling Validations: 
 
 
