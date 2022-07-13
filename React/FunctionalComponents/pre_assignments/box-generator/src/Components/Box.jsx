@@ -4,11 +4,11 @@ import React from 'react';
 const Box = props => {
 
   const boxStyle = {
+    display: 'inline-block',
     height: `${props.size}px`,
     width: `${props.size}px`,
     backgroundColor: props.color,
-    display: 'inline-block',
-    margin: '10px'
+    margin: '40px'
   }
 
   return (
