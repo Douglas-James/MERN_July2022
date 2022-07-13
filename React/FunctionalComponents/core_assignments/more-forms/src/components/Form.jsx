@@ -21,7 +21,7 @@ const From = (props) =>
     console.log('Welcome', newUser);
     setHasbeenSubmitted(true);
   }
-
+  // this conditional rendering 
   const formMessage = () => {
     if(hasBeenSubmitted){
       return 'Thank you for sub the form!'
@@ -39,7 +39,14 @@ const From = (props) =>
     // }
     <div className="container">
       <form onSubmit={createUser}>
-        <h3>{formMessage()}</h3>
+        {/* Ternary operators */}
+        {
+          hasBeenSubmitted?
+          <h3>Thank you for Submit the form!</h3>:
+          <h3>Welcome, please submit the form.</h3>
+        }
+        {/* Condition Rendering */}
+        {/* <h3>{formMessage()}</h3> */}
         <label htmlFor="firstname">FirstName</label>
         <input
           type="text"

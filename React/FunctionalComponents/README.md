@@ -30,9 +30,9 @@ just use the state.\
 
 1. Conditional Rendering:test .\
 test2.\
-2. Using Ternary Operators:test      .\
-test2.\
-3. Handling Validations: 
+2. Using Ternary Operators: Ternery operater offer a better way to conditionally render an element.\
+The biggest advantage in using ternary operator here is that we can replace the formMessage function.\
+3. Handling Validations: We cab use ternaries to diplay potential validation messages
 
 
 
