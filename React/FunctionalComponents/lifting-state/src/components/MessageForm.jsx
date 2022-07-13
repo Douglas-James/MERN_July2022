@@ -16,8 +16,9 @@ const MessageForm = (props) => {
   return (
     <form onSubmit={handleSubmit}>
       <h1>Send Message</h1>
-      <textarea name="" id="" cols="50" rows="4" onChange={(e)=> setMsg(e.target.value)} value={msg}></textarea>
-     <input type="submit" value="Send Message" />
+      <textarea name="" id="" cols="30" rows="4" onChange={(e)=> setMsg(e.target.value)} value={msg}></textarea>
+      <br/>
+     <input type="submit" value="Send Message"  className='btn btn-success'/>
     </form>
   )
 };

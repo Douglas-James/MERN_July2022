@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <MessageForm onNewMessage={ youveGotMail}/>
+      <MessageForm  onNewMessage={ youveGotMail} />
       <MessageDisplay message={ currentMsg}/>
     </div>
   );
