@@ -1,35 +1,12 @@
-import React, { useState } from "react";
-import validator from 'validator'
-  
-const App = () => {
-  
-  const [emailError, setEmailError] = useState('')
-  const validateEmail = (e) => {
-    var email = e.target.value
-  
-    if (validator.isEmail(email)) {
-      setEmailError('Valid Email :)')
-    } else {
-      setEmailError('Enter valid Email!')
-    }
-  }
-  
+import logo from './logo.svg';
+import './App.css';
+import FormValdiation from './Componetns/FormValdiation';
+function App() {
   return (
-    <div style={{
-      margin: 'auto',
-      marginLeft: '300px',
-    }}>
-      <pre>
-        <h2>Validating Email in ReactJS</h2>
-        <span>Enter Email: </span><input type="text" id="userEmail" 
-        onChange={(e) => validateEmail(e)}></input> <br />
-        <span style={{
-          fontWeight: 'bold',
-          color: 'red',
-        }}>{emailError}</span>
-      </pre>
+    <div className="App">
+      <FormValdiation></FormValdiation>
     </div>
   );
 }
-  
-export default App
+
+export default App;
