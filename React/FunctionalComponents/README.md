@@ -19,17 +19,18 @@ look inside the  pre_assignment for the file big-inversion
 --refs: attach a oointer to dom nodes. are called unctrolled components
 just use the state.\
 
-1. onChange
-2.  onSubmit
-3.  createUser
+1. onChange: would be using inside the inpute can be found inside your Form-hook folder
+2.  onSubmit: would be use to submite the form to server that would tell a given statement.
+3.  createUser: run a function inside the onSubmit form
+3.  Cleaning UP: 
 
 
 
 # Conditional Rendering
 
-
-
-
+1. Conditional Rendering:test .\ test2
+2. Using Ternary Operators:test      .\test2
+3. Handling Validations: 
 
 
 
