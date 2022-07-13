@@ -24,7 +24,7 @@ const From = (props) =>
 
   const formMessage = () => {
     if(hasBeenSubmitted){
-      return 'Thank you for submitted the form!'
+      return 'Thank you for sub the form!'
     }
     else{
       return 'Welcome, please submit the form';
