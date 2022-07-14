@@ -4,8 +4,7 @@ import './form.css'
 const Form = (props) => {
   // need to now about props so i can change it,
   const {list, setList} = props;
-
-  // need to track and make changes 
+  // need to track and make changes input
   const [input, setInput] = useState('');
   console.log(input)
 

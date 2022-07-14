@@ -21,9 +21,10 @@ const Tod = (props) => {
   return (
     <div>
       <div className='container'>
-          <p style={{textDecorationLine: task.finsihed? 'line-through' : 'none'}}>{task.name} is it finished?</p>
-          <input type="checkbox"  onChange={onChange} name='' checked={task.finsihed}/>
-          <input type="submit" value="Delet" onClick={onClick} className='btn'/>
+          {
+            task.finsihed === true?<input type="submit" value="Delet" onClick={onClick} className='btn'/> :  <p style={{textDecorationLine: task.finsihed? 'line-through' : 'none'}}>{task.name}: is it finished?</p>
+          }
+          <input type="checkbox"  onChange={onChange} name='' checked={task.finsihed}/> 
       </div>
     </div>
   );
