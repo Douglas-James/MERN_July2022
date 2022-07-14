@@ -25,9 +25,9 @@ const Tab = (props) => {
           })
         }
         {/* Show contents */}
-        <div>
+        <div className='container'>
           {
-            <p>{props.selectTab[tab].content}</p>
+            <p className='content'>{props.selectTab[tab].content}</p>
           }
         </div>
     </div>
