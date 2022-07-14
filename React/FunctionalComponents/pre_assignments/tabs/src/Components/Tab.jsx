@@ -9,8 +9,8 @@ const Tab = (props) => {
   const [tab, setTab] = useState(0);
 
   // hand the onchange 
-  const handTab = (e, idx) => {
-      setTab(idx);
+  const handTab = (e, value) => {
+      setTab(value);
   }
   return (
     <div>
