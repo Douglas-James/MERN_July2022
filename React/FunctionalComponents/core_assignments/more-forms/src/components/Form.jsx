@@ -101,7 +101,7 @@ const From = (props) =>
         {confirmPassword === password ? null : (
           <p className="text-danger">Password must match</p>
         )}
-        <button>Create Users</button>
+        <input type='submit'  value='Create-user'/>
       </form>
       <hr />
     </div>
