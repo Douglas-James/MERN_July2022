@@ -1,0 +1,12 @@
+.add{
+  background-color: blue;
+  padding: 20px;
+  color: #fff;
+  border: none;
+  margin: 5px;
+}
+.info{
+  display: block;
+  height: 35px;
+  border: none;
+}

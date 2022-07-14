@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import './form.css'
 
 const Form = (props) => {
   // need to now about props so i can change it,
@@ -28,8 +28,8 @@ const Form = (props) => {
   return (
     <div>
         <form onSubmit={taskSubmitted}>
-            <input type="text" name='task' value={input} onChange={onChange}/>
-            <input type="submit" value="Add" />
+            <input className='info' type="text" name='task' value={input} onChange={onChange}/>
+            <input type="submit" value="Add"  className='add'/>
         </form>
     </div>
   );

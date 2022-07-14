@@ -1,0 +1,16 @@
+input, p{
+  display: inline-block;
+}
+.btn{
+  background-color: black;
+  padding: 20px;
+  border: none;
+  margin: 10px;
+  color: white;
+  border-radius: 20px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  background-color: greenyellow;
+}

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import './todstyle.css'
 const Tod = (props) => {
   // would get props for to do list
   const {task, index, setList, list} = props;
@@ -20,11 +20,10 @@ const Tod = (props) => {
 
   return (
     <div>
-      <h1>{task.name}</h1>
-      <div>
-          <h5 style={{textDecorationLine: task.finsihed? 'line-through' : 'none'}}>Finished?</h5>
+      <div className='container'>
+          <p style={{textDecorationLine: task.finsihed? 'line-through' : 'none'}}>{task.name} is it finished?</p>
           <input type="checkbox"  onChange={onChange} name='' checked={task.finsihed}/>
-          <input type="submit" value="Delet" onClick={onClick}/>
+          <input type="submit" value="Delet" onClick={onClick} className='btn'/>
       </div>
     </div>
   );
