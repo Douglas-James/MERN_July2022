@@ -12,5 +12,5 @@ input, p{
 .container{
   display: flex;
   align-items: center;
-  background-color: greenyellow;
+  justify-content: center;
 }
