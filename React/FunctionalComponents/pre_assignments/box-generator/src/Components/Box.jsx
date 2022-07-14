@@ -8,7 +8,7 @@ const Box = props => {
     height: `${props.size}px`,
     width: `${props.size}px`,
     backgroundColor: props.color,
-    margin: '40px'
+    margin: '0px'
   }
 
   return (
