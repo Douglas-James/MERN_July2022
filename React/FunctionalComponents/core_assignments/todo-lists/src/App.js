@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, {useState} from 'react';
+import './App.css'; 
+import Tod from './Components/Tod';
+import Form from './Components/Form'
 function App() {
+  // need set list and listSet
+  const [list, setList] = useState([])
+  // console.log(listSet)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Create A Task</h1>
+      <Form type="text" list={list} setList={setList}/>
+      {list.map((task, key) => (<Tod key={key} task={task} setList={setList} index={key} list={list}/>))
+      }
     </div>
   );
 }
-
 export default App;
