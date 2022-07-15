@@ -17,8 +17,9 @@ const Tab = (props) => {
         {/* Map the tabs */}
         {
           props.selectTab.map((tab, idx) => {
+            console.log(tab)
             return(
-              <div style={tabStyle} >
+              <div style={tabStyle} key={idx} >
                   <p key={idx}  className='tabs' onClick={(e)=> handTab(e, idx)}>{tab.label}</p>
               </div>
             )
