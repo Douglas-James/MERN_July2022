@@ -18,9 +18,10 @@ const Tab = (props) => {
         {
           props.selectTab.map((tab, idx) => {
             console.log(tab)
+            // Sending Arguments in Callbacks on handTab(e, idx) need the index it is the only
             return(
               <div style={tabStyle} key={idx} >
-                  <p key={idx}  className='tabs' onClick={(e)=> handTab(e, idx)}>{tab.label}</p>
+                  <p key={idx}  className='tabs' onClick={(e)=> handTab(e, idx)}>{tab.label}</p> 
               </div>
             )
           })
@@ -28,7 +29,7 @@ const Tab = (props) => {
         {/* Show contents */}
         <div className='container'>
           {
-            <p className='content'>{props.selectTab[tab].content}</p>
+            <p className='content' style={{backgroundColor: props.selectTab[tab].color}}>{props.selectTab[tab].content}</p>
           }
         </div>
     </div>

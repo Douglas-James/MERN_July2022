@@ -10,6 +10,9 @@ class Birthday extends Component {
     this.state = {
       age: this.props.age 
     };
+    this.year = {
+        year: this.props.year
+    }
   }
   // write function here
   agecrement = (e) => {
@@ -21,6 +24,7 @@ class Birthday extends Component {
         <h1>{this.props.Name}</h1>
         <p>Age: {this.state.age}</p>
         <p>Hair color:{this.props.description}</p>
+        <p>Year: {this.year.year}</p> 
         <button onClick={this.agecrement}>Click to incress Age</button>
       </div>
     );
