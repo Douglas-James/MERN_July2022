@@ -1,0 +1,16 @@
+body{
+  background-color: beige;
+}
+.btn{
+  height: 40px;
+  margin: 30px;
+  border: none;
+  background-color: rgba(45, 45, 228, 0.757);
+}
+.pokem-name{
+  margin: 10px;
+
+}
+.names{
+    color: salmon;
+}
