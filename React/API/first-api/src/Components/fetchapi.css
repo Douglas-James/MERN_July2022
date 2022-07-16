@@ -1,0 +1,9 @@
+.api{
+  display: block;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.imgs{
+  height: 50px;
+  border: none;
+}
