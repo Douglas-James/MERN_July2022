@@ -23,15 +23,15 @@ const getData = () => {
       }
   return (
     <div>
-        <button onClick={getData}>Click me to fetch API</button>
+        <button onClick={getData} className='btn'>Click me to fetch API</button>
         {
             coin.map((coinObj, index) =>{
               return(
                 <div key={index} className='api'>
                   <div>
+                    <img src={coinObj.image} className='imgs'/>
                     <h3>{coinObj.name}{coinObj.id}</h3>
                     <p>Price: {coinObj.current_price}</p>
-                    <img src={coinObj.image} className='imgs' style={{backgroundColor: 'purple'}}/>
                   </div>
                 </div>
               )
