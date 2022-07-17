@@ -1,0 +1,36 @@
+.form-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.choice-select{
+  margin: 10px;
+  height: 30px;
+  width: 120px;
+  border: none;
+  background-color:	rgb(247, 247, 247);
+  border-radius: 5px;
+}
+.id{
+  width: fit-content;
+  margin: 10px;
+  border: none;
+  height: 30px;
+  background-color: 	rgb(247, 247, 247);
+  border-radius: 5px;
+}
+label{
+  font-weight: bold;
+}
+.search{
+  width: 120px;
+  height: 30px;
+  background-color: 	rgb(2, 117, 216);
+  border: none;
+  border-radius: 5px;
+}
+.error, img{
+  height: 500px;
+}
