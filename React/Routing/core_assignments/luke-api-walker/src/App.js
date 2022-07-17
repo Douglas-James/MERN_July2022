@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-
+import SearchStar from './Components/SearchStar';
+import {
+  Link,
+  Routes,
+  Route
+} from "react-router-dom";
+import DisplayStar from './Components/DisplayStar';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Luke Api Walker</h1>
+        <SearchStar></SearchStar>
+        <Routes>
+          <Route exact path='/:search/:id' element={<DisplayStar/>}/>
+        </Routes>
     </div>
   );
 }
