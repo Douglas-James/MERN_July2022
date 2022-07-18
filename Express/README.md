@@ -12,7 +12,7 @@
 
 
 # What is MEthod?
-<!-- when it where action is give http for example <form action='/process' method="GET"> <input type='text' name='name',/></form> -->
+when it where action is give http for example form action='/process' method="GET"> input type='text' name='name',/> form>
 
 
 # What is Express?
