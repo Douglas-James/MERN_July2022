@@ -1,5 +1,5 @@
 # Need to use Postman
-1. let as see a api better and has give more feature
+1. let as see a api better and has more feature
 
 
 
