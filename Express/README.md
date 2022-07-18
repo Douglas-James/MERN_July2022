@@ -34,3 +34,9 @@ You might have Heard of node including Hapi, Koa,and Fastify, so etc./
 2. Mac/linux sudo npm install -g nodemon
 3. Run server using nodemon server.js never run it node if you need to update.
 
+
+
+# Routing with Express
+1. gettind data from a url by ':' and res.json(name[req.params.id]);
+2. 
+

@@ -21,6 +21,7 @@ const DisplayStar = (props) => {
     .then(response=>{
       console.log('Your response is:',response)
       setStar(response.data)
+      setEroor(false)
     })
     .catch(error=>{
       console.log('You found some error')
