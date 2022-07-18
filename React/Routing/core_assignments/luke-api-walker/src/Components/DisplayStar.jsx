@@ -33,9 +33,9 @@ const DisplayStar = (props) => {
     <div>
       {
         
-        search == 'people'?
-        <People starsWars={starsWars}></People>:search == 'starships'?<Starships starsWars={starsWars}/>:search=='planets'?
-        <Planets starsWars={starsWars}/>:search =='films'?<Films starsWars={starsWars}/>:search=='vehicles'?<Vehicles starsWars={starsWars}/>:search=='species'? <Specis starsWars={starsWars}/>: null
+        search == 'people' && (!isNaN(id))?
+        <People starsWars={starsWars}></People>:search == 'starships' && (!isNaN(id))?<Starships starsWars={starsWars}/>:search=='planets' && (!isNaN(id))?
+        <Planets starsWars={starsWars}/>:search =='films' && (!isNaN(id))?<Films starsWars={starsWars}/>:search=='vehicles' && (!isNaN(id))?<Vehicles starsWars={starsWars}/>:search=='species' && (!isNaN(id))? <Specis starsWars={starsWars}/>: null
       }
     </div>
       {error?
