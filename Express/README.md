@@ -38,5 +38,16 @@ You might have Heard of node including Hapi, Koa,and Fastify, so etc./
 
 # Routing with Express
 1. gettind data from a url by ':' and res.json(name[req.params.id]);
-2. 
+2. look inside my Rout folder to understand
+
+
+# Folder Structure
+1. Express is strictly for handling all communication with the database, like python server.py
+2. create inside folder your working server folders inside confi, controllers, models, routes out side server.js
+4. controllers handls all logic for each model(i'e creating, updateing, etc..)
+5. models will hold all the schemas
+6. routes will handle all of your routes for each models
+7. server.js will handle all the server logic with express
+
+# End of my Notes on Express
 
