@@ -1,9 +1,10 @@
 // import mongoose
 const mongoose = require('mongoose');
 
+const db_name = 'first_db'
 
 // connect to clould mongos                                              Chamge
-mongoose.connect('mongodb+srv://root:root@cluster0.emxv1i4.mongodb.net/first_db?retryWrites=true&w=majority', {
+mongoose.connect(`mongodb+srv://root:root@cluster0.emxv1i4.mongodb.net/${db_name}?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
