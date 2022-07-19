@@ -56,5 +56,16 @@ app.put('/api/users/:id', (req, res) => {
   res.json({counts: users.length,
   results: users});
 })
+
+
+// Deleting data
+app.delete('/api/users/:id', (req, res) => {
+  users.splice(req.params.id,1);
+  // respond with something general speaking respons with some thing
+  res.json({counts: users.length,
+  results: users});
+})
+
+
 // this need to below the other code blocks just like flask debuger
 app.listen(port, () => console.log(`Listening on  Port: ${port}`));
