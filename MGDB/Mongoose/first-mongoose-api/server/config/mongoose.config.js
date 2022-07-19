@@ -3,12 +3,8 @@ const mongoose = require('mongoose');
 
 const db_name = 'first_db'
 
-// connect to clould mongos                                              Chamge
-<<<<<<< HEAD
+// connect to clould mongos                                         
 mongoose.connect(`mongodb+srv://root:root@cluster0.emxv1i4.mongodb.net/${db_name}?retryWrites=true&w=majority`, {
-=======
-mongoose.connect('This clould mongoose please add you own to get started', {
->>>>>>> origin/master
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
