@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 
 // connect to clould mongos                                              Chamge
-mongoose.connect('Your', {
+mongoose.connect('This clould mango please add you own to get started', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
