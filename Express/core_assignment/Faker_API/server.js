@@ -63,8 +63,8 @@ app.get('/api/user/company', (req, res) => {
 })
 
 // console objects
-console.log(User);
-console.log(Company)
+console.log(new User);
+console.log(new Company)
 
 
 
