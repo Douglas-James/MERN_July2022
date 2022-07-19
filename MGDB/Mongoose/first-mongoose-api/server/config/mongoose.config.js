@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 
 // connect to clould mongos                                              Chamge
-mongoose.connect('mongodb+srv://root:root@cluster0.emxv1i4.mongodb.net/first_db?retryWrites=true&w=majority', {
+mongoose.connect('Your', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
