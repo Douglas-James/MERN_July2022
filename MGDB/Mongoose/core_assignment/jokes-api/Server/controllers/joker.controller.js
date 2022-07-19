@@ -23,7 +23,7 @@ module.exports.showallJokers = (req, res) => {
 // create
 module.exports.createJokes = (req, res) =>{
     Joker.create(req.body)
-      then(newJokes => {
+      .then(newJokes => {
           res.json({result: newJokes})
       })
       .catch((err) => {
