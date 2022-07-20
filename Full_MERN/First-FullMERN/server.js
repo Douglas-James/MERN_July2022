@@ -6,6 +6,8 @@ const cors = require('cors')
 // server/config connect to data server
 require("./Server/Config/mongoose.config")
 
+
+
 // End of import ^
 
 // port 
@@ -15,7 +17,7 @@ const port = 8000;
 const app = express();
 // connect to react
 app.use(cors());
-require('dotenv').config();
+
 
 
 // make need be above the rout app.get something like that
@@ -27,7 +29,7 @@ app.use(express.urlencoded({extended: true}));
 
 
 // connect to routes
-require("./server/routes/Product1.routes")(app)
+require("./server/routes/Full-Mern.routes")(app)
 
 
 

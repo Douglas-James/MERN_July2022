@@ -1,6 +1,4 @@
 node_modules/
 test-faker/
-Full_MERN/
-
-
+.env
 

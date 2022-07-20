@@ -1,11 +1,10 @@
 // import mongoose
 const mongoose = require('mongoose');
-require('dotenv').config();
                 // name change
-const db_name = 'product_manager1'
+const db_name = 'first_Mern'
 
 // connect to clould mongos                                         
-mongoose.connect(process.env.no_one, {
+mongoose.connect(`mongodb+srv://root:root@cluster0.emxv1i4.mongodb.net/${db_name}?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })

@@ -2,9 +2,9 @@
 const mongoose = require('mongoose');
                 // name change
 const db_name = 'jokes_api'
-
+require('dotenv').config();
 // connect to clould mongos                                         
-mongoose.connect(`mongodb+srv://root:root@cluster0.emxv1i4.mongodb.net/${db_name}?retryWrites=true&w=majority`, {
+mongoose.connect(process.env.on_one, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
