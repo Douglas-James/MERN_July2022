@@ -29,6 +29,7 @@ const submitHandler = (e) => {
         setError(response.data.errors);
       }else{
         setError({});
+        e.target.reset();
       }
     })
     .catch(err=>{console.log(err)})
