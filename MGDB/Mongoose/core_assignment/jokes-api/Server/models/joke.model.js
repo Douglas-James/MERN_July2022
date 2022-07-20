@@ -9,12 +9,12 @@ const JokerSchema = new mongoose.Schema(
     setup: {
         type: String,
         required: [true, "Company is required"],
-        minLength: [2, "Comany  at least 2 character long"],
+        minLength: [2, "setup  at least 2 character long"],
         maxLength: [255, 'Company is to long']
     },
     punchline: {
       type: String,
-      required: [true, 'Ceo is required'],
+      required: [true, 'puchline is required'],
     },
   }, {timestamps: true} // time stamps
 )
