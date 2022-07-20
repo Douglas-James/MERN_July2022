@@ -48,7 +48,7 @@ const submitHandler = (e) => {
               <input type="number"  className='form-control' name='price' onChange={handinput}/>
           </div>
           <div className='form-group'>
-              <label htmlFor="">Descripption: </label>
+              <label htmlFor="">Description: </label>
               <input type="text"  className='form-control' name='description' onChange={handinput}/>
           </div>
           <input type="submit" value="Create" className='btn btn-success m-3'/>
