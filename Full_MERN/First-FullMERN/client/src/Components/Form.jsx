@@ -23,6 +23,7 @@ const submitHandler = (e) => {
     axios.post('http://localhost:8000/api/merns', forminfo)
     .then(response => {
       console.log("you have form is submitted", response)
+      e.target.reset();
     })
     .catch(err=>{console.log(err)})
 }
