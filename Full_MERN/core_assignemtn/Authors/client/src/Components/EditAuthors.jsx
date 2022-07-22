@@ -31,7 +31,7 @@ useEffect(() => {
     }
   })
   .catch(error=>{console.log(error)})
-},[id])
+},[])
 
 // handinput 
 const inputHander = (e) => {
@@ -61,10 +61,16 @@ const handsubmit = (e) => {
 
   return (
     <div>
-      <h1>Favorite authors</h1>
-      <Link to='/' className='btn btn-primary'>Home</Link>
-      <p>Edit This authors</p>
       {/* Form */}
+      {
+        notFound?<>
+          <p>We're sorry, but could not find the author you are looking for would you like to add a new author</p>
+          <Link to='/add/authors' className='btn btn-primary'>Add a author</Link>
+          <img src='https://i.stack.imgur.com/6M513.png' alt='not-found' />
+          </> : <>
+        <h1>Favorite authors</h1>
+        <Link to='/' className='btn btn-primary'>Home</Link>
+        <p>Edit This authors</p>
       <form onSubmit={handsubmit}>
             <div className='form-group'>
                   <label>Name:</label>
@@ -75,14 +81,9 @@ const handsubmit = (e) => {
                   <input type='submit' value='Submit' className='btn btn-primary m-2'/>
             </div>
         </form>
+          </>
+      }
         <hr/>
-        {
-          notFound?<>
-          <p>We're sorry, but could not find the author you are looking for would you like to add a new author</p>
-          <Link to='/add/authors' className='btn btn-primary'>Add a author</Link>
-          <img src='https://i.stack.imgur.com/6M513.png' alt='not-found' /></> : null
-          
-        }
     </div>
   );
 };
