@@ -71,16 +71,16 @@ const handsubmit = (e) => {
         <h1>Favorite authors</h1>
         <Link to='/' className='btn btn-primary'>Home</Link>
         <p>Edit This authors</p>
-      <form onSubmit={handsubmit}>
-            <div className='form-group'>
-                  <label>Name:</label>
-                  <input type='text'  name='name' className='form-controller' value={details.name} onChange={inputHander}/>
-                  <p className='text-danger'>{errors.name?.message}</p>
-                  <br/>
-                  <Link to='/' className='btn btn-primary'>Cancel</Link>
-                  <input type='submit' value='Submit' className='btn btn-primary m-2'/>
-            </div>
-        </form>
+        <form onSubmit={handsubmit}>
+              <div className='form-group'>
+                    <label>Name:</label>
+                    <input type='text'  name='name' className='form-controller' value={details.name} onChange={inputHander}/>
+                    <p className='text-danger'>{errors.name?.message}</p>
+                    <br/>
+                    <Link to='/' className='btn btn-primary'>Cancel</Link>
+                    <input type='submit' value='Submit' className='btn btn-primary m-2'/>
+              </div>
+          </form>
           </>
       }
         <hr/>
